@@ -10,36 +10,96 @@
     <link rel="stylesheet" href="styles.css"/>
   </head>
 
-  <body id="main">
+  <body id="main" class="container">
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <h1 id="title">
         Nonexistent Service Customer Satisfaction Survey
     </h1>
-    <p>
+    <p id="description">
         Fill out this survey so Nonexistent Service can improve the service not provided to you.
     </p>
-    <form id="survey-form" action="#">
-      <label id="name-label" for="name">Name:</label>
-      <input id="name" type="text" placeholder="John Doe">
+    <form id="survey-form" class="container" action="#">
+      <div class="question container">
+        <label id="name-label" for="name">Name:</label>
+        <input id="name" type="text" placeholder="John Doe" required>
+      </div>
 
-      <label id="email-label" for="email">Email:</label>
-      <input id="email" type="email" placeholder="example@mail.com">
+      <div class="question container">
+        <label id="email-label" for="email">Email:</label>
+        <input id="email" type="email" placeholder="example@mail.com" required>
+      </div>
 
-      <label id="number-label" for="number">SOME NUMBER:</label>
-      <input id="number" type="number" min="0" max="10" placeholder="5">
+      <div class="question container">
+        <label id="number-label" for="number">Number of years as a costumer:</label>
+        <input id="number" type="number" min="0" max="10" placeholder="5">
+      </div>
+
+      <div class="question container">
+        <label id="dropdown-label" for="dropdown">General level of satisfaction:</label>
+        <select id="dropdown">
+          <option value="">Please choose an option</option>
+          <option value="Very happy">Very happy</option>
+          <option value="Happy">Happy</option>
+          <option value="Indifferent">Indifferent</option>
+          <option value="Unhappy">Unhappy</option>
+          <option value="Very unhappy">Very unhappy</option>
+        </select>
+      </div>
+
+      <div class="question container">
+        <p>Please select your favorite product:</p>
+        <div id="radio-buttons">
+
+          <label for="eec5" class="item">
+            <input id="eec5" value="eec5" type="radio" name="favorite">Electric Electricity Cable 5
+          </label>
+
+          <label for="pfs3000" class="item">
+            <input id="pfs3000" value="pfs3000" type="radio" name="favorite">Pneumatic Fluid Spring 3000
+          </label>
+
+          <label for="hwhx" class="item">
+            <input id="hwhx" value="hwhx" type="radio" name="favorite">Hydraulic Water Hose X
+          </label>
+        </div>
+      </div>
+
+      <div class="question container">
+        <p>Please select the types of product you use:</p>
+        <div id="checkboxes">
+
+          <label for="electric" class="item">
+            <input id="electric" value="electric" type="checkbox" name="types">Electric
+          </label>
+
+          <label for="pneumatic" class="item">
+            <input id="pneumatic" value="pneumatic" type="checkbox" name="types">Pneumatic
+          </label>
+
+          <label for="hydraulic" class="item">
+            <input id="hydraulic" value="hydraulic" type="checkbox" name="types">Hydraulic
+          </label>
+        </div>
+      </div>
+
+      <div class="question container">
+        <label for="comments">Please make any additional comment below:</label>
+        <textarea id="comments" placeholder="Insert your comment here"></textarea>
+      </div>
+
+      <button id="submit" type="submit">Submit</button>
 
     </form>
-    <a id="gh-link" target="_blank" href="https://github.com/getuliosilva/fcc-tribute-page">
-        See the source code for this page on github
-    </a>
     
     <footer>
-        <a id="cc-img" rel="license" target="_blank" href="http://creativecommons.org/licenses/by-sa/4.0/">
-            <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" />
-        </a>
-        <p>
-            This work is licensed under a <a id="cc-text" rel="license" target="_blank" href="http://creativecommons.org/licenses/by-sa/4.0/"> Creative Commons Attribution-ShareAlike 4.0 International License</a>.
-        </p>
+      <a id="cc-img" rel="license" target="_blank" href="http://creativecommons.org/licenses/by-sa/4.0/">
+        <img alt="Creative Commons License" style="border-width:0"
+          src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" />
+      </a>
+      <p>
+        This work is licensed under a <a id="cc-text" rel="license" target="_blank" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+      </p>
+      <a target="_blank" href="https://github.com/getuliosilva/fcc-tribute-page">See the source code for this page on github</a>
     </footer>
   </body>
   
